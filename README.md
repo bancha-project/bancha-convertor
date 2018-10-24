@@ -18,4 +18,4 @@ yarn build
 ```
 で普通にビルドする。
 
-/dest/index.html をブラウザで開く。
+/docs/index.html をブラウザで開く。

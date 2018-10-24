@@ -6,7 +6,7 @@ module.exports = {
   mode: "development",
   entry: './src/index.ts',
   output: {
-    path: path.resolve(__dirname, './dest'),
+    path: path.resolve(__dirname, './docs'),
     filename: 'base.js'
   },
   module: {
