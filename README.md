@@ -21,3 +21,22 @@ yarn build
 で普通にビルドする。
 
 /docs/index.html をブラウザで開く。
+
+## ページを追加するには
+1. src/pages 以下にSample.vue を作成
+
+2. Nav.vueにリンクを追加
+```
+            <li>
+              <router-link to="/sample">
+                  Sample的な
+              </router-link>
+            </li>
+```
+
+3. index.tsに、import と path を追加
+```
+import Sample from "./pages/Sample.vue"
+~~~
+{ path: '/sample', component: Sample },
+```
