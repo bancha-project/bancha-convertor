@@ -11,6 +11,11 @@
                 Base64
               </router-link>
             </li>
+            <li>
+              <router-link to="/case">
+                  Case
+              </router-link>
+            </li>
         </ul>
     </div>
 </template>
