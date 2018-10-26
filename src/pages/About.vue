@@ -6,8 +6,8 @@
                 <p>Composer</p>
             </div>
             <div class="card-action">
-                <a href="http://ahyaemon.matrix.jp/">あひゃえもんのページ</a>
-                <a href="https://github.com/ahyaemon">GitHub</a>
+                <a href="http://ahyaemon.matrix.jp/" target="_blank">あひゃえもんのページ</a>
+                <a href="https://github.com/ahyaemon" target="_blank">GitHub</a>
             </div>
         </div>
 
@@ -17,7 +17,7 @@
                 <p>Super Engeneer</p>
             </div>
             <div class="card-action">
-                <a href="https://github.com/Kentama7">GitHub</a>
+                <a href="https://github.com/Kentama7" target="_blank">GitHub</a>
             </div>
         </div>
     </div>
