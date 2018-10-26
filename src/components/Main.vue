@@ -1,9 +1,13 @@
 <template>
-    <header>
-        <router-link to="/">
-            <h1>Bancha Convertor</h1>
-        </router-link>
-    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                  <router-view></router-view>
+                </div>
+            </div>
+        </div>
+    </main>
 </template>
 
 <script lang="ts">

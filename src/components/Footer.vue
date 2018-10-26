@@ -1,7 +1,7 @@
 <template>
     <footer>
         <small>
-            &copy; 2018 Bancha Project.
+            &copy; 2018 Bancha Project
         </small>
     </footer>
 </template>

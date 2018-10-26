@@ -5,15 +5,16 @@ import Home from "./pages/Home.vue"
 import Sql from "./pages/Sql.vue"
 import Base64 from "./pages/Base64.vue"
 import Case from "./pages/Case.vue"
-
-const Foo = { template: '<div>foo</div>' }
-const Bar = { template: '<div>bar</div>' }
+import Contact from "./pages/Contact.vue"
+import About from "./pages/About.vue"
 
 const routes = [
   { path: '/', component: Home },
   { path: '/sql', component: Sql },
   { path: '/base64', component: Base64 },
   { path: '/case', component: Case },
+  { path: '/contact', component: Contact },
+  { path: '/about', component: About },
 ]
 
 const router = new VueRouter({
