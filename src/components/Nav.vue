@@ -60,9 +60,14 @@
 <script lang="ts">
     import Vue from 'vue'
     import Component from 'vue-class-component'
+    import M from "materialize-css"
 
     @Component
     export default class Nav extends Vue {
+        mounted() {
+            const elems = document.querySelectorAll('.sidenav')
+            const instances = M.Sidenav.init(elems);
+        }
     }
 </script>
 

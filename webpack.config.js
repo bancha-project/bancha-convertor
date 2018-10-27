@@ -59,5 +59,6 @@ module.exports = {
   externals: {
     "vue": "Vue",
     "vue-router": "VueRouter",
+    "materialize-css": "M",
   }
 }
