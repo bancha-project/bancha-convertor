@@ -60,5 +60,6 @@ module.exports = {
     "vue": "Vue",
     "vue-router": "VueRouter",
     "materialize-css": "M",
+    "js-yaml": "jsyaml"
   }
 }

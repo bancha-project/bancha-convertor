@@ -7,6 +7,7 @@ import Base64 from "./pages/Base64.vue"
 import Case from "./pages/Case.vue"
 import Contact from "./pages/Contact.vue"
 import About from "./pages/About.vue"
+import ConfigFile from "./pages/ConfigFile.vue"
 
 const routes = [
   { path: '/', component: Home },
@@ -15,6 +16,7 @@ const routes = [
   { path: '/case', component: Case },
   { path: '/contact', component: Contact },
   { path: '/about', component: About },
+  { path: '/config-file', component: ConfigFile },
 ]
 
 const router = new VueRouter({

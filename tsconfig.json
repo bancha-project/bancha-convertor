@@ -9,10 +9,10 @@
     "module": "es2015",
     "moduleResolution": "node",
     "isolatedModules": false,
-    "strict": true,
+    "strict": false,
     "target": "es5",
-    "experimentalDecorators": true, // Experimental support for decorators のエラー回避
-    "allowJs": true, // Experimental support for decorators のエラー回避
+    "experimentalDecorators": true,
+    "allowJs": true,
     "esModuleInterop": true,
   },
   "include": [
