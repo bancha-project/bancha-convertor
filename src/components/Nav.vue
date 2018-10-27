@@ -28,6 +28,12 @@
                     Case
                 </router-link>
             </li>
+            <li>
+                <router-link to="/config-file">
+                    <i class="material-icons">edit</i>
+                    設定ファイル
+                </router-link>
+            </li>
 
             <li><div class="divider"></div></li>
             <li><a class="subheader">ほかのコンテンツ</a></li>
