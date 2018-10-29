@@ -1,14 +1,41 @@
 <template>
     <div>
-        Caseを変えたい。
-        <input type="text" v-bind:value="inputValue" v-on:input="handleInput($event)"  />
-        <button v-on:click="handleClick()">変える</button>
-        <h1>大文字:{{ value | convertUpperCase }}</h1>
-        <h1>小文字:{{ value | convertLowerCase }}</h1>
-        <h1>キャメルケース:{{ value | convertSnakeToCamelCase }}</h1>
-        <h1>スネークケース:{{ value | convertCamelToSnakeCase }}</h1>
-        <h1>パスカルケース:{{ value | convertPascalCase }}</h1>
-        <h1>ケバブケース:{{ value | convertKebabCase }}</h1>
+        <span>Caseを変えたい。</span>
+        <div class="row">
+            <div class="input-field col s6">
+                <input type="text" id="case_text" v-bind:value="inputValue" v-on:input="handleInput($event)" class="validate">
+                <label for="case_text">Text</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <button v-on:click="handleClick()" class="waves-effect waves-light btn">変える</button>
+            </div>
+            <div class="col s12">
+                <div class="col s12"><span>大文字</span></div>
+                <div class="col s6 offset-s1"><span class="flow-text">{{ value | convertUpperCase }}</span></div>
+            </div>
+            <div class="col s12">
+                <div class="col s12"><span>小文字</span></div>
+                <div class="col s6 offset-s1"><span class="flow-text">{{ value | convertLowerCase }}</span></div>
+            </div>
+            <div class="col s12">
+                <div class="col s12"><span>キャメルケース</span></div>
+                <div class="col s6 offset-s1"><span class="flow-text">{{ value | convertSnakeToCamelCase }}</span></div>
+            </div>
+            <div class="col s12">
+                <div class="col s12"><span>スネークケース</span></div>
+                <div class="col s6 offset-s1"><span class="flow-text">{{ value | convertCamelToSnakeCase }}</span></div>
+            </div>
+            <div class="col s12">
+                <div class="col s12"><span>パスカルケース</span></div>
+                <div class="col s6 offset-s1"><span class="flow-text">{{ value | convertPascalCase }}</span></div>
+            </div>
+            <div class="col s12">
+                <div class="col s12"><span>ケバブケース</span></div>
+                <div class="col s6 offset-s1"><span class="flow-text">{{ value | convertKebabCase }}</span></div>
+            </div>
+        </div>
     </div>
 </template>
 
