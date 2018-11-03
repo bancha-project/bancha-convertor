@@ -1,41 +1,42 @@
 <template>
-    <div>
+    <div class="row">
         <span>Caseを変えたい。</span>
-        <div class="row">
-            <div class="input-field col s6">
-                <input type="text" id="case_text" v-bind:value="inputValue" v-on:input="handleInput($event)" class="validate">
-                <label for="case_text">Text</label>
-            </div>
+        <div class="section input-field">
+            <textarea id="case" v-bind:value="inputValue" v-on:input="handleInput($event)"
+                      class="materialize-textarea"></textarea>
+            <label for="case">Text</label>
+            <button v-on:click="handleClick()" class="waves-effect waves-light btn">変える</button>
         </div>
-        <div class="row">
-            <div class="col s12">
-                <button v-on:click="handleClick()" class="waves-effect waves-light btn">変える</button>
-            </div>
-            <div class="col s12">
-                <div class="col s12"><span>大文字</span></div>
-                <div class="col s6 offset-s1"><span class="flow-text">{{ value | convertUpperCase }}</span></div>
-            </div>
-            <div class="col s12">
-                <div class="col s12"><span>小文字</span></div>
-                <div class="col s6 offset-s1"><span class="flow-text">{{ value | convertLowerCase }}</span></div>
-            </div>
-            <div class="col s12">
-                <div class="col s12"><span>キャメルケース</span></div>
-                <div class="col s6 offset-s1"><span class="flow-text">{{ value | convertSnakeToCamelCase }}</span></div>
-            </div>
-            <div class="col s12">
-                <div class="col s12"><span>スネークケース</span></div>
-                <div class="col s6 offset-s1"><span class="flow-text">{{ value | convertCamelToSnakeCase }}</span></div>
-            </div>
-            <div class="col s12">
-                <div class="col s12"><span>パスカルケース</span></div>
-                <div class="col s6 offset-s1"><span class="flow-text">{{ value | convertPascalCase }}</span></div>
-            </div>
-            <div class="col s12">
-                <div class="col s12"><span>ケバブケース</span></div>
-                <div class="col s6 offset-s1"><span class="flow-text">{{ value | convertKebabCase }}</span></div>
-            </div>
+        <div class="section">
+            <h5>大文字</h5>
+            <pre>{{ value | convertUpperCase }}</pre>
         </div>
+        <div class="divider"></div>
+        <div class="section">
+            <h5>小文字</h5>
+            <pre>{{ value | convertLowerCase }}</pre>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <h5>キャメルケース</h5>
+            <pre>{{ value | convertSnakeToCamelCase }}</pre>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <h5>パスカルケース</h5>
+            <pre>{{ value | convertPascalCase }}</pre>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <h5>スネークケース</h5>
+            <pre>{{ value | convertCamelToSnakeCase }}</pre>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <h5>ケバブケース</h5>
+            <pre>{{ value | convertKebabCase }}</pre>
+        </div>
+
     </div>
 </template>
 
@@ -106,7 +107,6 @@
         return;
       }
       this.value = this.inputValue;
-      this.inputValue = '';
     }
   }
 </script>
