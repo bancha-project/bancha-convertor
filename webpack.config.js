@@ -61,5 +61,13 @@ module.exports = {
     "vue-router": "VueRouter",
     "materialize-css": "M",
     "js-yaml": "jsyaml"
-  }
+  },
+  devServer: {
+    contentBase:  path.resolve(__dirname, './docs'),
+    publicPath: '/docs/',
+    compress: true,
+    hot: true,
+    port: 9000,
+    open: true,
+  },
 }
