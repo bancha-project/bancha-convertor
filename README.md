@@ -22,6 +22,12 @@ yarn build
 
 /docs/index.html をブラウザで開く。
 
+```
+yarn start
+```
+で http://localhost:9000/ を開いてもOK。  
+
+
 ## ページを追加するには
 1. src/pages 以下にSample.vue を作成
 
