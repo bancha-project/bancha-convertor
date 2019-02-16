@@ -25,7 +25,7 @@ yarn build
 ```
 yarn start
 ```
-で http://localhost:9000/docs/ を開いてもOK。  
+で http://localhost:9000/ を開いてもOK。  
 
 
 ## ページを追加するには
