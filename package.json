@@ -6,7 +6,7 @@
   "devDependencies": {
     "@types/js-yaml": "^3.11.2",
     "@types/materialize-css": "^1.0.5",
-    "css-loader": "^1.0.0",
+    "css-loader": "^3.4.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "node-sass": "^4.9.4",
     "sass-loader": "^7.1.0",
