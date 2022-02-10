@@ -8,7 +8,7 @@
     "@types/materialize-css": "^1.0.5",
     "css-loader": "^1.0.0",
     "extract-text-webpack-plugin": "^3.0.2",
-    "node-sass": "^4.9.4",
+    "node-sass": "^7.0.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "ts-loader": "^5.2.2",
